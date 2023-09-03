@@ -17652,7 +17652,11 @@
                         this.icon = "https://starblast.io/ecp/pmf.png";
                         break;
                     case "seasonal":
-                        this.icon = "https://starblast.io/ecp/seasonal.png"
+                        this.icon = "https://starblast.io/ecp/seasonal.png";
+                        break;
+                    case "rithy":
+                        this.icon = "https://raw.githubusercontent.com/rithyn/rithy-archive/main/pictures/ucp/rithy.png";
+                        break;
                 }
                 if (d = Math.round(i / 2.2), null != this.icon && this.icon.startsWith("http")) {
                     if (this.icon = this.icon.replace("http:", "https:"), null == this.icon_src && (this.icon_src = new Image, this.icon_src.crossOrigin = "Anonymous", this.icon_src.src = this.icon, this.icon_src.onload = function(t) {
@@ -17852,7 +17856,8 @@
                     discord: "Discord",
                     medic: "Medic",
                     blank: "Blank",
-                    seasonal: "Seasonal"
+                    seasonal: "Seasonal",
+                    rithy: "Rithy",
                 },
                 finish: {
                     zinc: "Zinc",
