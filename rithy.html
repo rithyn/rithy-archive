@@ -17657,6 +17657,22 @@
                     case "rithy":
                         this.icon = "https://raw.githubusercontent.com/rithyn/rithy-archive/main/pictures/ucp/rithy.png";
                         break;
+                    case "SDC Winner":
+                        this.icon = "https://starblast.io/ecp/sdcchamp.png";
+                        break;
+                    case "SRC Winner":
+                        this.icon = "https://starblast.io/ecp/srcchamp.png";
+                        break;
+                    case "Translator":
+                        this.icon = "https://starblast.io/ecp/translator.png";
+                        break;
+                    case "Devlopper" :
+                        this.icon = "https://starblast.io/ecp/dev.png";
+                        break;
+                    case "Shipwright" :
+                        this.icon = "https://starblast.io/ecp/shipdesigner.jpg";
+                        break;
+                    
                 }
                 if (d = Math.round(i / 2.2), null != this.icon && this.icon.startsWith("http")) {
                     if (this.icon = this.icon.replace("http:", "https:"), null == this.icon_src && (this.icon_src = new Image, this.icon_src.crossOrigin = "Anonymous", this.icon_src.src = this.icon, this.icon_src.onload = function(t) {
@@ -33100,6 +33116,7 @@
         }, texists = function(t, e) {
             return translations.exists(t, e)
         }, module.exports = translations;
-    })(); </script>
+    })(); 
+    </script>
 </body>
 </html>
