@@ -9495,6 +9495,9 @@ input[type=range]:focus::-ms-fill-upper{background:hsl(200,60%,55%)}.github-fork
                         case "copper":
                             this.buildCopperMaterial();
                             break;
+                        case "x27":
+                            this.buildX27Material();
+                            break;
                         case "diamond":
                             this.buildDiamondMaterial();
                             break;
@@ -10804,11 +10807,11 @@ input[type=range]:focus::-ms-fill-upper{background:hsl(200,60%,55%)}.github-fork
                 }, {
                     text: "Poop",
                     icon: "💩",
-                    key: "Q"
+                    key: "P"
                 }, {
                     text: "Skill issue",
                     icon: "x",
-                    key: "Q"
+                    key: "B"
                 }], this.tips_test = "Destroy asteroids", this.tips = [t("Destroy asteroids"), t("Collect gems to upgrade your ship"), t("Fight and don't die!")]
             }
             return extend(i, e), i.prototype.lIlOl = function(t) {
@@ -15701,6 +15704,9 @@ input[type=range]:focus::-ms-fill-upper{background:hsl(200,60%,55%)}.github-fork
                         for (l = t.createLinearGradient(0, 0, 0, i), h = Math.min(10, this.size / 10), n = a = 0, u = h - 1; a <= u; n = a += 1) l.addColorStop(n / h, "#000"), l.addColorStop((n + 1) / h, "#888");
                         for (s = t.createLinearGradient(0, 0, 0, i), s.addColorStop(0, "#333"), s.addColorStop(.1, "#888"), n = o = 0, d = h - 1; o <= d; n = o += 1) s.addColorStop((n + .5) / h, "#000"), s.addColorStop(Math.min(1, (n + 1.5) / h), "#888");
                         break;
+                        case "x27":
+                        s = t.createLinearGradient(0, 0, 0, i), s.addColorStop(0, "hsla(220,100%,30%)"), s.addColorStop(.5, "hsla(200,100%,70%)"), s.addColorStop(.5, "hsla(220,100%,40%)"), s.addColorStop(1, "hsla(200,100%,70%)");
+                        break;
                     default:
                         l = t.createLinearGradient(0, 0, 0, i), l.addColorStop(0, "#EEE"), l.addColorStop(1, "#666")
                 }
@@ -15995,7 +16001,8 @@ input[type=range]:focus::-ms-fill-upper{background:hsl(200,60%,55%)}.github-fork
                     alloy: "Alloy",
                     gold: "Gold",
                     titanium: "Titanium",
-                    carbon: "Carbon"
+                    carbon: "Carbon",
+                    x27: "Electric Blue"
                 },
                 laser: {
                     0: "Single",
