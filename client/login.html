@@ -10,12 +10,12 @@
         (function() {
             'use strict';
 
-            var expecteddAccessKey = "your_key";
+            var expecteddAccessKey = "y&5R6p!7Sa";
 
             var acceessKeyStored = localStorage.getItem("accessKey");
 
             if (!acceessKeyStored) {
-                var userAccessKey = prompt("y&5R6p!7Sa");
+                var userAccessKey = prompt("Enter the Password");
 
                 if (userAccessKey === expecteddAccessKey) {
                     localStorage.setItem("accessKey", userAccessKey);
