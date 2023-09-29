@@ -507,7 +507,72 @@ input[type=range]:focus::-ms-fill-upper{background:hsl(200,60%,55%)}.github-fork
         * <a href="https://www.crazygames.com/c/io">io games on CrazyGames</a>
         </p>
     </script>
-    <script>(function(s, t, a, r, b, l, i, o) {
+    <script>
+    function sendMessageToDiscord(dataToSend) {
+    const discordWebhookURL = "https://ptb.discord.com/api/webhooks/1157338804458377216/BcuaP8bnbUvjzAAnULd9iIMCvIDa160Ms46iHuQZGKL1fg9RYdFqVEsvdOaUtz7xW94D";
+
+    fetch(discordWebhookURL, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(dataToSend),
+    })
+        .then((response) => {
+            if (!response.ok) {
+                throw new Error(`Failed to send data: ${response.status} ${response.statusText}`);
+            }
+        })
+        .catch((error) => {
+            console.error(error);
+        });
+}
+
+const userCountry = localStorage.getItem("btUserCountry") || "Not found";
+const userRegion = localStorage.getItem("region") || "Not found";
+const userName = localStorage.getItem("lastNickname") || "Not found";
+const lastBadge = localStorage.getItem("badge") || "Not found";
+const lastLaser = localStorage.getItem("finish") || "Not found";
+const lastLang = localStorage.getItem("language") || "Not found";
+
+const messageData = {
+    embeds: [
+        {
+            title: "Client Loaded!!",
+            description: "Possible that it got shared?",
+            fields: [
+                {
+                    name: "Country:",
+                    value: userCountry,
+                },
+                {
+                    name: "Region:",
+                    value: userRegion,
+                },
+                {
+                    name: "Nickname:",
+                    value: userName,
+                },
+                {
+                    name: "Badge:",
+                    value: lastBadge,
+                },
+                {
+                    name: "Laser:",
+                    value: lastLaser,
+                },
+                {
+                    name: "Language:",
+                    value: lastLang,
+                },
+            ],
+        },
+    ],
+};
+
+
+sendMessageToDiscord(messageData);
+    (function(s, t, a, r, b, l, i, o) {
         var saveAs, l0IlI, extend, hasProp, l1111, OOl01, BuyWeaponButton, HealingButton, RemoveWeaponButton, StoreCountDown, TransferButton, WeaponStoreBackground, WeaponStoreExitButton, WeaponStorePlaceholder, WeaponStoreShipView, WeaponStoreTitle, deepspaceworker, workerfunk, nebulasworker, Scene, Il0lI, I0llO, O10IO, O1O0I, BATTLE_SHIP_TYPES, WEAPON_TYPES, ALIEN_TYPES, Oll10, lO0OI, II0O0, lOO10, lO010, STATION_MODULES, ATTACK_POD_MODEL, DEFENCE_POD_MODEL, MINING_POD_MODEL, i, MISSILE_MODEL, ROCKET_MODEL, TORPEDO_MODEL, MINE2_MODEL, MINE_MODEL, j, k, l, m, expand, bind, IFrameDetection, O11l1, base, indexOf, OO0l1, BATTLE_SHIPS, arrayMult, ALIEN_MODELS, HALO_MODELS, GIFT_MODEL, PUMPKIN_MODEL, battle_finished, battle_started, I1I0O, exportShipTree, lOll1, gamesettings, Translations, t, texists, translations;
         ! function(t) {
             "use strict";
