@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>STARBLAST.IO</title>
+    <title>Alpha-Nébula</title>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui=1">
     <meta charset="UTF-8">
@@ -22,7 +22,7 @@
     <meta name="twitter:title" content="Starblast.io, free online shoot'em up">
     <meta name="twitter:description" content="Multiplayer Arcade Space Shooter io Game! Shoot asteroids and enemies to collect crystals. Upgrade your ship before you get killed!">
     <meta name="twitter:image" content="https://starblast.io/static/img/starblast.png?2">
-    <link rel="icon" type="image/png" href="https://starblast.io/static/img/icon64.png" />
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/LCN8888/Nebu-Client/main/N%C3%A9bula-Client/icone%20du%20client.png" />
     <link rel="image_src" href="https://starblast.io/static/img/starblast.png?2">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
@@ -1003,7 +1003,7 @@
 
         .stats {
             font-size: .5em;
-            border: 1px solid hsl(35, 50%, 70%);
+            border: 5px solid hsl(35, 50%, 70%);
             box-shadow: 0 0 15px rgb(182, 106, 0);
             background: hsla(35, 50%, 10%, .5);
             width: 600px;
@@ -16512,7 +16512,7 @@
                     emissive: IlO0l.hsvToRgbHex(this.hue, .5, 1),
                     emissiveMap: l1IOO
                 })
-            },    
+            },
             t.prototype.buildCloudMaterial = function () {
                 return this.material = new THREE.MeshPhongMaterial({
                     map: Oll1I,
@@ -20123,7 +20123,7 @@
                     emissive: IlO0l.hsvToRgbHex(this.hue, .5, 1),
                     emissiveMap: l1IOO
                 })
-            },    
+            },
             t.prototype.buildCloudMaterial = function () {
                 return this.material = new THREE.MeshPhongMaterial({
                     map: Oll1I,
@@ -29345,7 +29345,7 @@
                                 h;
                                 if (4 === mt.readyState && 200 === mt.status) {
                                     if (i.style.display = "none", h = JSON.parse(mt.responseText), h.players < 5 && Date.now() > r + 36e5)
-                                        return i.style.display = "block", i.innerHTML = "Event finished!<br>Thank you, commanders! :)";
+                                        return i.style.display = "block", i.innerHTML = "";
                                     if (h.players < 230) {
                                         for (l = document.querySelectorAll(".join-alpha-centauri"), o = [], a = 0, n = l.length; a < n; a++)
                                             s = l[a], o.push(function (i) {
@@ -32061,15 +32061,15 @@
             case "srcbronze":
                 this.icon = "https://media.discordapp.net/attachments/862006006599254056/922067050749378590/Bronze.png";
                 break;
-            case "nebula":
-                this.icon = "https://raw.githubusercontent.com/LCN8888/Nebu-Client/main/ucp/ucp.png";
-                break; 
             case "NebulaViolet":
                 this.icon = "https://raw.githubusercontent.com/LCN8888/Nebu-Client/main/ucp/NebulaViolet.png";
-                break;     
+                break;    
             case "NebulaNoir":
                 this.icon = "https://raw.githubusercontent.com/LCN8888/Nebu-Client/main/ucp/NebulaNoir.png";
-                break;   
+                break;  
+            case "nebula":
+                this.icon = "https://raw.githubusercontent.com/LCN8888/Nebu-Client/main/ucp/ucp.png";
+                break;
             case "Seasonalhalloween":
                 this.icon = "https://raw.githubusercontent.com/LCN8888/Nebu-Client/main/ucp/Seasonal-halloween.jpg";
                 break;
@@ -32089,34 +32089,34 @@
                 this.icon = "https://raw.githubusercontent.com/LCN8888/Nebu-Client/main/ucp/AnosUCP.png";
                 break;    
             case "AlexUCP":
-                this.icon = "https://raw.githubusercontent.com/LCN8888/Nebu-Client/main/ucp/AlexUCP.jpg"; 
+                this.icon = "https://raw.githubusercontent.com/LCN8888/Nebu-Client/main/ucp/AlexUCP.jpg";   
                 break;  
             case "NokUCP":
-                this.icon = "https://raw.githubusercontent.com/LCN8888/Nebu-Client/main/ucp/NokUCP.png";      
+                this.icon = "https://raw.githubusercontent.com/LCN8888/Nebu-Client/main/ucp/NokUCP.png";     
                 break;  
             case "HazardUCP":
                 this.icon = "https://raw.githubusercontent.com/LCN8888/Nebu-Client/main/ucp/HazardUCP.png";   
                 break;  
             case "LovelyUCP":
-                this.icon = "https://raw.githubusercontent.com/LCN8888/Nebu-Client/main/ucp/LovelyUCP.png";   
+                this.icon = "https://raw.githubusercontent.com/LCN8888/Nebu-Client/main/ucp/LovelyUCP.png"; 
                 break;  
             case "BloodyUCP":
-                this.icon = "https://raw.githubusercontent.com/LCN8888/Nebu-Client/main/ucp/BloodyUCP.png";  
+                this.icon = "https://raw.githubusercontent.com/LCN8888/Nebu-Client/main/ucp/BloodyUCP.png";
                 break;  
             case "AcarUCP":
-                this.icon = "https://raw.githubusercontent.com/LCN8888/Nebu-Client/main/ucp/AcarUCP.jpg";  
+                this.icon = "https://raw.githubusercontent.com/LCN8888/Nebu-Client/main/ucp/AcarUCP.jpg";
                 break;  
             case "RaxounUCP":
-                this.icon = "https://raw.githubusercontent.com/LCN8888/Nebu-Client/main/ucp/RaxounUCP.png"; 
+                this.icon = "https://raw.githubusercontent.com/LCN8888/Nebu-Client/main/ucp/RaxounUCP.png";
                 break;  
             case "X2DashUCP":
-                this.icon = "https://raw.githubusercontent.com/LCN8888/Nebu-Client/main/ucp/X2-DashUCP.png"; 
+                this.icon = "https://raw.githubusercontent.com/LCN8888/Nebu-Client/main/ucp/X2-DashUCP.png";
                 break;  
             case "AdvancedUCP":
-                this.icon = "https://raw.githubusercontent.com/LCN8888/Nebu-Client/main/ucp/AdvencedUCP.png"; 
+                this.icon = "https://raw.githubusercontent.com/LCN8888/Nebu-Client/main/ucp/AdvencedUCP.png";
                 break;  
             case "XtraUCP":
-                this.icon = "https://raw.githubusercontent.com/LastClient/UCP/main/XtraUCP.png"; 
+                this.icon = "https://raw.githubusercontent.com/LastClient/UCP/main/XtraUCP.png";
                 break;  
             case "AresUCP":
                 this.icon = "https://raw.githubusercontent.com/LastClient/UCP/main/AresUCP.png"; 
@@ -32460,6 +32460,9 @@
                 AdvancedUCP: "AdvancedUCP",
                 XtraUCP: "XtraUCP",
                 AresUCP: "AresUCP",
+                nebula: "Alpha-Nebula",
+                NebulaViolet: "Nebula-Violet",
+                NebulaNoir: "Nebula-Noir",
                 blank: "Blank",
             },
             finish: {
@@ -32468,6 +32471,7 @@
                 titanium: "Titanium",
                 gold: "Gold",
                 carbon: "Carbon",
+                Nebulium: "Nebulium",
                 copperr: "Copper",
                 diamondd: "Diamond",
                 x277: "Electric Blue",
