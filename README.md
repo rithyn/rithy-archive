@@ -1,3 +1,3 @@
 # rithy-archive
 A archive repo.
-Ah, vous parle
+Ah, vous parlez
