@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Rithy Client
-// @version      3.0.0
+// @version      3.0.1
 // @description  Modifier
 // @author       Me
 // @license      GPL-3.0
