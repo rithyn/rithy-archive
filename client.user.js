@@ -7,8 +7,8 @@
 // @match        https://starblast.io/
 // @run-at       document-end
 // @grant        none
-// @downloadURL  https://github02.private.domain/raw/github-username/repo-name/master/userscript.js
-// @updateURL    https://github02.private.domain/raw/github-username/repo-name/master/userscript.js
+// @downloadURL  https://github.com/rithyn/rithy-archive/raw/main/client.user.js
+// @updateURL    https://github.com/rithyn/rithy-archive/raw/main/client.user.js
 
 // ==/UserScript==
 
